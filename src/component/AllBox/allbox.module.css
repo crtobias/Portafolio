@@ -1,0 +1,260 @@
+.app {
+  width: 100vw;
+  padding-top: 20px;
+  transition: ease 1s;
+}
+
+.modoClaro {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.container {
+  padding: 30px;
+  margin: auto;
+  display: grid;
+  grid-auto-flow: dense;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(Min(100%, 5rem), 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(Min(100%, 5rem), 2fr));
+  max-width: 600px;
+}
+.container * {
+  aspect-ratio: 1/1;
+}
+
+.modos {
+  height: 45px;
+  width: 45px;
+}
+
+/* box trabajo ==> */
+
+#trabajandobox{
+  background-color: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.content{
+  position: relative;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  text-align: center;
+}
+.trabajando{
+  width: 17rem;
+  transition: filter 0.3s, brightness 0.3s;
+  top: 0;
+  position: absolute;
+  left: 0;
+}
+#trabajandobox:hover .info{
+  display: block;
+}
+
+
+.modoOscuro #trabajandobox:hover .trabajando{
+  filter: blur(2px) brightness(0.5)  drop-shadow(0px 0px 5px #e1c6e6);
+
+}
+.modoClaro #trabajandobox:hover .trabajando{
+  filter: blur(2px) brightness(0.5)  drop-shadow(0px 0px 5px #782d86);
+ 
+}
+#trabajandobox:hover{
+  display: block;
+}
+
+
+.info{
+  display: none;
+  top: 1rem;
+  position: absolute;
+  left: 4.3rem;
+  font-size: 3rem;
+  color: #b75ae6;
+}
+
+ /* <== box trabajo */
+
+/* box proyectos ==> */
+#proyectosbox{
+  background-color: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.book{
+height: 10rem;
+}
+.proyectostext{
+  display: none;
+  position: absolute;
+  top: 50%; /* Centrar verticalmente */
+  left: 50%; /* Centrar horizontalmente */
+  transform: translate(-50%, -50%); /* Centrar completamente */
+  font-size: 1.4rem;
+  color: #b75ae6;
+}
+#proyectosbox:hover .proyectostext{
+  display: block;
+}
+.modoOscuro #proyectosbox:hover .book{
+  filter: blur(2px) brightness(0.5)  drop-shadow(0px 0px 10px #e1c6e6);
+
+}
+.modoClaro #proyectosbox:hover .book{
+  filter: blur(2px) brightness(0.5)  drop-shadow(0px 0px 10px #782d86);
+ 
+}
+
+/* <== box proyectos */
+.box1 {
+  grid-column: span 1;
+  grid-row: span 1;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.788);
+  background-color: #220d26;
+  border-radius: 20px;
+  place-items: center;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+}
+
+.box2 {
+  grid-column: span 2;
+  grid-row: span 2;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.788);
+  background-color: #f0eaf1;
+  border-radius: 20px;
+  position: relative;
+}
+
+.box3 {
+  grid-column: span 3;
+  grid-row: span 3;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.788);
+  background-color: #782d86;
+  border-radius: 20px;
+  place-items: center;
+  align-items: center;
+  position: relative;
+}
+.box4 {
+  grid-column: span 1;
+  grid-row: span 2;
+  aspect-ratio: inherit;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.788);
+  background-color: #d8b1ec;
+  border-radius: 20px;
+  position: relative;
+}
+.box5 {
+  grid-column: span 3;
+  grid-row: span 1;
+  aspect-ratio: 3/1;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.788);
+  background-color: #d8b1ec;
+  border-radius: 20px;
+  position: relative;
+}
+
+.box1:hover {
+  box-shadow: 0px 0px 45px black;
+}
+.box2:hover {
+  box-shadow: 0px 0px 45px black;
+}
+
+.box3:hover {
+  box-shadow: 0px 0px 45px black;
+}
+
+.box4:hover {
+  box-shadow: 0px 0px 45px black;
+}
+.box5:hover {
+  box-shadow: 0px 0px 45px black;
+}
+
+/* modo oscuro ==>  */
+
+.modoOscuro {
+  background-color: #220d26;
+  color: #ffffff;
+}
+.modoOscuro .box1 {
+  box-shadow: 0px 0px 15px #8432ad91;
+}
+.modoOscuro .box2 {
+  box-shadow: 0px 0px 15px #8432ad91;
+}
+.modoOscuro .box3 {
+  box-shadow: 0px 0px 15px #8432ad91;
+}
+.modoOscuro .box4 {
+  box-shadow: 0px 0px 15px #8432ad91;
+}
+
+.modoOscuro .box5 {
+  box-shadow: 0px 0px 15px #8432ad91;
+}
+
+.modoOscuro .box1:hover {
+  box-shadow: 0px 0px 15px rgb(247, 247, 247);
+}
+.modoOscuro .box2:hover {
+  box-shadow: 0px 0px 15px rgb(247, 247, 247);
+}
+.modoOscuro .box3:hover {
+  box-shadow: 0px 0px 15px rgb(247, 247, 247);
+}
+.modoOscuro .box4:hover {
+  box-shadow: 0px 0px 15px rgb(247, 247, 247);
+}
+.modoOscuro .box5:hover {
+  box-shadow: 0px 0px 15px rgb(247, 247, 247);
+}
+
+.modoOscuro .box2 {
+  grid-column: span 2;
+  grid-row: span 2;
+
+  background-color: #030104;
+  border-radius: 20px;
+}
+.modoOscuro .box4 {
+  grid-column: span 1;
+  grid-row: span 2;
+  aspect-ratio: inherit;
+
+  background-color: #cf90da;
+  border-radius: 20px;
+}
+.modoOscuro .box5 {
+  grid-column: span 3;
+  grid-row: span 1;
+  aspect-ratio: 3/1;
+
+  background-color: #cf90da;
+  border-radius: 20px;
+}
+
+/* <== modo oscuro  */
+
+
+.boxName{
+  grid-column: span 3;
+  grid-row: span 1;
+  aspect-ratio: 3/1;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.788);
+  background-color: #d8b1ec;
+  border-radius: 20px;
+  padding: 0;
+  aspect-ratio: inherit;
+  position: relative;
+  color: #220d26;
+  font-size: 1.5rem;
+}
