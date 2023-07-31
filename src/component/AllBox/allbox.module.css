@@ -4,8 +4,8 @@
   width: 100vw;
   min-height: 100vh;
   transition: ease 1s;
-  padding-top: 20px;
-  padding-bottom: 200px;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 .modoClaro {
@@ -381,6 +381,8 @@ height: 10rem;
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    height: 13rem;
+    width: 20rem;
     max-height: 15rem;
     text-align: center;
   }
@@ -400,26 +402,27 @@ height: 10rem;
   }
 
   .cont{
-    height: 15rem;
-    width: 21rem;
-    justify-content: space-around;
+    height: 13rem;
+    width: 20rem;
     align-items: center;
     text-align: center;
-   
     display: flex;
     flex-direction: column;
+   
 
   } 
   .tit{
     font-size: 2rem;
     width: 10rem;
     filter: drop-shadow(0px 0px 10px black);
+    max-height: 3rem;
    
   }
   .par{
     width: 12rem;
     font-size: 1.5rem;
     filter: drop-shadow(0px 0px 10px black);
+    max-height: 3rem;
    
   }
   .bots{
@@ -428,6 +431,7 @@ height: 10rem;
     gap: 15px;
     
     width: 15rem;
+    margin-bottom: 10px;
 
   }
   #contactobox:hover .tit{
@@ -649,23 +653,24 @@ height: 10rem;
   background-color: #782d86;
   border-radius: 20px;
   position: relative;
-  justify-content: center;
   padding: 20px;
-  align-items: center;
-  place-items: center;
-  text-align: center;
+  height: 15rem;
+  width: 17rem;
 }
 
 .proyect{
-  
+  position: relative;
+  place-items: center;
   display: flex;
   flex-direction: row;
-  max-height: 15rem;
+  max-height: 11rem;
+  height: 11rem;
+  padding: 15px;
   
 }
 
 .fotopro{
-  height: 120px;
+  height: 60px;
   border-radius: 15px;
   box-shadow: 0px 0px 15px black;
 }
@@ -686,6 +691,8 @@ height: 10rem;
   flex-direction:column;
   justify-content: center;
   min-width: 12rem;
+  height: 5rem;
+  max-height: 5rem;
 }
 .parrafo{
   text-align: center;
@@ -707,6 +714,8 @@ height: 10rem;
     border-radius: 20px;
     position: relative;
     padding: 20px;
+    max-height: 15rem;
+    width: 23rem;
   }
   
 }
@@ -721,14 +730,16 @@ height: 10rem;
     border-radius: 20px;
     position: relative;
     padding: 20px;
+    max-height: 15rem;
+    width: 26.5rem;
   }
   .fotopro{
-    height: 200px;
+    height: 150px;
     border-radius: 15px;
     box-shadow: 0px 0px 15px black;
   }
   .prologo{
-    height: 60px;
+    height: 50px;
     margin: 5px;
   }
   
@@ -754,9 +765,11 @@ height: 10rem;
     border-radius: 20px;
     position: relative;
     padding: 20px;
+    max-height: 15rem;
+    width: 34.5rem;
   }
   .fotopro{
-    height: 280px;
+    height: 200px;
     border-radius: 15px;
     box-shadow: 0px 0px 15px black;
   }
