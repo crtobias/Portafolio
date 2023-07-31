@@ -1,5 +1,9 @@
+@font-face {
+  font-family: 'letra';
+  src: url('./assets/letra.ttf') format('truetype');
+}
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: letra,Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -24,6 +28,7 @@ a:hover {
 }
 
 body {
+  
   margin: 0;
   display: flex;
   place-items: center;
@@ -55,3 +60,4 @@ button {
   margin: 0px;
   padding: 0px;
 }
+
