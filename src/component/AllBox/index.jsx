@@ -60,32 +60,22 @@ export const AllBox = () => {
           </div>
         </button>
 
+
+
+
         <div className={styles.box6} id={styles.contactobox}>
           <div className={styles.cont}>
             <h3 className={styles.tit}>Contactos</h3>
             <br />
             <p className={styles.par}>Full Stack developer</p>
             <br />
-
-
-
-
-
             <div className={styles.bots}>
               <a className={styles.iconsContacto} href="https://github.com/crtobias" target="_blank">
                 <img className={styles.modos} src={git} alt="git" />
               </a>
-
-
-
               <a className={styles.iconsContacto} href="https://www.linkedin.com/in/tobias-gonzalez-arriola-0a2399273/" target="_blank">
                 <img className={styles.modos} src={linkedin} alt="link" />
               </a>
-
-
-
-            
-
 
               <a className={styles.iconsContacto} href="mailto:tgonzalezarriola@gmail.com" target="_blank">
                 <img className={styles.modos} src={gmail} alt="" />
@@ -218,9 +208,10 @@ export const AllBox = () => {
            
             <img className={styles.fotopro} src={molino} alt="" />
             <div className={styles.titleandlogo}>
+              
             <h3 className={styles.titlepro}>el molino</h3>
             <p>Fecha: 31 de julio </p>
-            <p>aplicacion para restaurantes , facilita hacer ordenes pedidos y reseñas en un restaurante</p>
+            <p className={styles.parrafo}>aplicacion para restaurantes , facilita hacer ordenes pedidos y reseñas en un restaurante</p>
             
            <div>
            <a href="https://github.com/crtobias/El-Molino" target="_blank">
@@ -252,7 +243,7 @@ export const AllBox = () => {
            <div className={styles.titleandlogo}>
            <h3  className={styles.titlepro}>pokeapi</h3>
            <p>Fecha: 2 de junio</p>
-           <p>poke api , crea tus pokemones o busca alguno de tu temporada favorita , con estilo retro</p>
+           <p  className={styles.parrafo}>poke api , crea tus pokemones o busca alguno de tu temporada favorita , con estilo retro</p>
            <div>
 
 

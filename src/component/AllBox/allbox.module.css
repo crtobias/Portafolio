@@ -193,13 +193,16 @@ height: 10rem;
   position: relative;
   color: #220d26;
   font-size: 2rem;
+  max-height: 5rem;
+  align-items: center;
+  place-items: center;
+
+ 
 }
 .name{
+  margin-top: 25px;
   font-size: 2rem;
-  position: absolute;
-  width: 25rem;
-  top: 2rem;
-  left:-3.5rem;
+  position: relative;
   filter: drop-shadow(0px 0px 15px black);
 }
 .box6 {
@@ -378,6 +381,8 @@ height: 10rem;
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    max-height: 15rem;
+    text-align: center;
   }
 
   .iconsContacto{
@@ -388,41 +393,42 @@ height: 10rem;
     border-radius: 50%;
     box-shadow: 0px 0px 25px rgb(60, 2, 57);
     
+    
   }
   .iconsContacto:hover{
     box-shadow: 0px 0px 25px #ab51c4;
   }
 
   .cont{
-    position: absolute;
-    height: 4rem;
-    display: flex;
-    flex-direction: column;
-    width: 10rem;
+    height: 15rem;
+    width: 21rem;
     justify-content: space-around;
-    left: 2.5rem;
-    top: 2.5rem;
     align-items: center;
     text-align: center;
+   
+    display: flex;
+    flex-direction: column;
+
   } 
   .tit{
-    margin-left: -1rem;
     font-size: 2rem;
+    width: 10rem;
     filter: drop-shadow(0px 0px 10px black);
+   
   }
   .par{
     width: 12rem;
-    margin-left: 3.8rem;
     font-size: 1.5rem;
     filter: drop-shadow(0px 0px 10px black);
+   
   }
   .bots{
-    position: absolute;
     display: flex;
     flex-direction: row-reverse;
     gap: 15px;
-    margin-left: 2.5rem;
-    margin-top: 19.5rem;
+    
+    width: 15rem;
+
   }
   #contactobox:hover .tit{
     filter: drop-shadow(0px 0px 5px black);
@@ -647,14 +653,15 @@ height: 10rem;
   padding: 20px;
   align-items: center;
   place-items: center;
+  text-align: center;
 }
 
 .proyect{
   
   display: flex;
   flex-direction: row;
-
   max-height: 15rem;
+  
 }
 
 .fotopro{
@@ -674,11 +681,17 @@ height: 10rem;
 }
 
 .titleandlogo{
+  margin-top: 10rem;
   display: flex;
   flex-direction:column;
-
+  justify-content: center;
+  min-width: 12rem;
 }
-
+.parrafo{
+  text-align: center;
+  max-width: 15rem;
+  font-size: 0.8rem;
+}
 
 
 
